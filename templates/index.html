@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIしりとり</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AIしりとり 🎮🌸</h1>
+      <p class="subtitle">ひらがなだけで ことばをつなげていこう！</p>
+    </header>
+
+    <section class="rules">
+      <h2>ルール</h2>
+      <ul>
+        <li>ひらがなと「-（ハイフン）」だけつかえるよ</li>
+        <li>さいごが「ん」のことばは まけ</li>
+        <li>おなじ ことばを つかったら まけ</li>
+        <li>ちいさい もじ（ゃ・ゅ・ょ・っ など）は おおきくして つなぐよ</li>
+        <li>ハイフンでおわるときは さいごのひらがなでつなぐよ</li>
+        <li>20かい まで あそべるよ（ひきわけになるよ）</li>
+      </ul>
+    </section>
+
+    <section class="game">
+      <div class="status">
+        <div>つぎの さいしょの もじ: <span id="next-head">（はじめては なんでもOK）</span></div>
+        <div>かいすう: <span id="turn-count">0</span> / 20</div>
+      </div>
+
+      <ul id="history" class="history"></ul>
+
+      <form id="form" class="input-row">
+        <input id="user-input" type="text" placeholder="ひらがなで ことばを 入れてね" autocomplete="off" maxlength="20" />
+        <button type="submit">おくる ▶</button>
+      </form>
+
+      <div id="message" class="message"></div>
+    </section>
+
+    <footer>
+      <small>Powered by Gemini · 作: あなたとAI</small>
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
