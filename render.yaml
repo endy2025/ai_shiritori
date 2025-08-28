@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ai-shiritori
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --preload --workers=2 --threads=4 --timeout=120
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false
