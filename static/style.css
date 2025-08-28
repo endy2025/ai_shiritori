@@ -1,0 +1,22 @@
+:root{--bg:#fff7fb;--card:#ffffff;--accent:#ff9ecb;--accent2:#8bd3dd;--text:#333;--muted:#666}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;background:linear-gradient(180deg,#fff7fb, #fef6ff 40%, #f8fbff);color:var(--text)}
+.container{max-width:840px;margin:0 auto;padding:20px}
+header{display:flex;flex-direction:column;gap:6px;align-items:center;margin-bottom:12px}
+h1{margin:6px 0;font-size:28px}
+.subtitle{color:var(--muted);margin:0}
+.rules{background:var(--card);border-radius:16px;padding:12px 16px;border:2px dashed var(--accent);}
+.rules h2{margin:6px 0 8px 0;font-size:18px}
+.rules ul{margin:0 0 0 18px}
+.game{margin-top:16px;background:var(--card);border-radius:16px;padding:16px;border:1px solid #eee;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+.status{display:flex;justify-content:space-between;margin-bottom:8px;color:var(--muted)}
+.history{list-style:none;padding:0;margin:0 0 12px 0;display:flex;flex-direction:column;gap:8px}
+.history li{padding:10px 12px;border-radius:12px;max-width:80%}
+.history li.user{background:#ffe5f1;align-self:flex-start;border:1px solid #ffd0e6}
+.history li.ai{background:#e7f8fb;align-self:flex-end;border:1px solid #cdeff5}
+.input-row{display:flex;gap:8px}
+.input-row input{flex:1;padding:10px 12px;border-radius:12px;border:1px solid #ccc;font-size:16px}
+.input-row button{padding:10px 14px;border:none;border-radius:12px;background:var(--accent);color:#fff;font-size:16px;cursor:pointer}
+.input-row button:hover{opacity:.92}
+.message{margin-top:10px;color:#c0392b;min-height:20px}
+footer{margin-top:18px;text-align:center;color:var(--muted)}
